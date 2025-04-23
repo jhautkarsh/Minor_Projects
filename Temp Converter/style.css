@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #2c3e50, #4ca1af); /* Added a cool blue gradient background */
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: #34495e; /* Dark grey background for the container */
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px); /* Hover effect for the container */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #ecf0f1;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 5px;
+  }
+  
+  input,
+  select {
+    flex: 1;
+    padding: 12px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7;
+    font-size: 16px;
+    outline: none;
+    background-color: #ecf0f1;
+    color: #333;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #16a085; /* Greenish focus color */
+  }
+  
+  select {
+    width: auto;
+    flex: 0 0 30%;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .convert-button,
+  .reset-button {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #16a085; /* Vibrant green button */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #1abc9c; /* Slightly brighter green on hover */
+    transform: translateY(-3px); /* Subtle hover effect */
+  }
+  
+  button:active {
+    transform: translateY(3px); /* Press effect */
+  }
+  
+  .output-container {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ecf0f1;
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      max-width: 90%;
+    }
+  
+    .input-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .input-container input,
+    .input-container select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .button-container button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form action="">
+            <div class="amount">
+                <label for="amount">Enter Amount : </label>
+                <input type="text" name="Amount" id="amount">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <label for="yaha se">From :</label>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                        <select name="from" id="yaha se"></select>
+                    </div>
+                </div>
+                <span class="material-symbols-outlined " id="icon"> currency_exchange  </span>
+                <div class="to">
+                    <label for="yaha tk">To :</label>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="flag">
+                        <select name="to" id="yaha tk"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg"></div>
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+
+    <script src="codes.js"></script>
+    <script src="app.js"> </script>
+</body>
+
+</html>

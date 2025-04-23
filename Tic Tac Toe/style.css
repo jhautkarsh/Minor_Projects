@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #0f2027, #2c5364); /* Deep blue-teal gradient */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00ffd5; /* Vibrant aqua */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2vmin;
+    width: 60vmin;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+  
+  .box {
+    height: 100px;
+    width: 100px;
+    border-radius: 14px;
+    border: none;
+    background-color: #fff8dc; /* soft cream */
+    color: #ff6347; /* tomato red */
+    font-size: 3rem;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: transform 0.15s ease, background-color 0.3s ease;
+  }
+  
+  .box:hover {
+    background-color: #fff1b5;
+    transform: scale(1.06);
+  }
+  
+  #reset-btn,
+  #new-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #009688; /* teal */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0.5rem;
+  }
+  
+  #reset-btn:hover,
+  #new-btn:hover {
+    background-color: #26a69a;
+    transform: translateY(-2px);
+  }
+  
+  #msg {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  }
+  
+  .msg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  @media (max-width: 500px) {
+    .game {
+      gap: 2vmin;
+      width: 90vmin;
+    }
+  
+    .box {
+      height: 80px;
+      width: 80px;
+      font-size: 2.5rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    #msg {
+      font-size: 1.8rem;
+    }
+  }
